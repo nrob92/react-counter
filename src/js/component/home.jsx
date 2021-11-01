@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-function Home({ props }) {
+function Home(props) {
 	return (
 		<div className="counter">
 			<div className="clock">
@@ -10,14 +10,14 @@ function Home({ props }) {
 			<div>{props.sixth % 10}</div>
 			<div>{props.fifth % 10}</div>
 			<div>{props.fourth % 10}</div>
-			<div>{props.third % 10}fgwg</div>
+			<div>{props.third % 10}</div>
 			<div>{props.second % 10}</div>
 			<div>{props.first % 10}</div>
 		</div>
 	);
 }
 
-App.propTypes = {
+Home.propTypes = {
 	sixth: PropTypes.number,
 	fifth: PropTypes.number,
 	fourth: PropTypes.number,
